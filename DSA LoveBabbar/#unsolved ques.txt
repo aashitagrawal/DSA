@@ -1,0 +1,18 @@
+Pending ques
+BITWISE - Write a function that takes an unsigned integer and returns the number of '1' bits it has
+
+BITWISE - The complement of an integer is the integer you get when you flip all the 0's to 1's and all the 1's to 0's in its binary representation.
+
+Square Root of function without using sqrt function
+
+Power pow(a,b), without using pow function
+
+Lec 15 - description H.W ques
+
+Lec 16 - 4 contest ques
+
+
+
+
+Understood logic but didnt code
+Lecture 15 - Book allocation
