@@ -6,7 +6,7 @@ using namespace std;
 // Space Complexity = O(1)
 // Effectively finds a numbers in a array
 
-int binarySearch(const vector<int> &arr, int target)
+int binarySearch1(const vector<int> &arr, int target)
 {
     int low = 0;
     int high = arr.size() - 1;
@@ -25,6 +25,28 @@ int binarySearch(const vector<int> &arr, int target)
     return -1;
 }
 
+int binarySearch2(const vector<int> &arr, int target)
+{
+    int low = 0;
+    int high = arr.size() - 1;
+
+    while (high - low > 1)
+    {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] < target)
+            low = mid + 1;
+        else
+            high = mid;
+    }
+
+    if (arr[low] == target)
+        return low;
+    if (arr[high] == target)
+        return high;
+    return -1;
+    
+}
+
 int main()
 {
     // Perform a binary search and return the index of the target element.
@@ -32,6 +54,8 @@ int main()
     vector<int> arr = {11, 13, 15, 2, 9, 4, 7};
     sort(arr.begin(), arr.end()); //sorting is compulsory in binary search
     int target = 11;
-    int result = binarySearch(arr, target);
-    cout << "Target found at index: " << result << endl;
+    int result1 = binarySearch1(arr, target);
+    int result2 = binarySearch2(arr, target);
+    cout << "Target found at index: " << result1 << endl;
+    cout << "Target found at index: " << result2 << endl;
 }
