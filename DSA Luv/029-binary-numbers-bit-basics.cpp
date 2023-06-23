@@ -1,5 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// Today's date - 23 June 2023
+// Topic - Bit manipulation basics
+
 int main()
 {
     cout<< INT_MAX <<endl;
