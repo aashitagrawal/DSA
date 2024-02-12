@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// return true when the first argument should come before the second argument in the sorted order, and false otherwise
+
 bool cmp1(int a, int b){
     return a>b;
 }
